@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .scroll::-webkit-scrollbar {
+          width: 0px;
+        }
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              Archivo: ["Archivo"],
+              Protest: ["Protest Strike"],
+              Poppins: ["Poppins"],
+              Afacad: ["Afacad Flux"],
+            },
+          },
+        },
+        fontWeight: {
+          thin: "100",
+          hairline: "100",
+          extralight: "200",
+          light: "300",
+          normal: "400",
+          medium: "500",
+          semibold: "600",
+          bold: "700",
+          extrabold: "800",
+          "extra-bold": "800",
+          black: "900",
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-200 min-h-[5000px] scroll">
+    <!-- Header Section Start-->
+    <section id="head" class="mb-12">
+      <div class="container w-[95%] h-12 mx-auto mt-5 mb-3 lg:w-full lg:px-6">
+        <div id="judul" class="py-1 px-2 flex justify-between">
+          <div class="flex items-center">
+            <a href="#home"
+              ><i class="ph ph-intersection text-3xl font-semibold"></i
+            ></a>
+            <h1 class="font-Poppins font-bold text-3xl mx-[2px]">Arcade</h1>
+          </div>
+          <div class="flex items-center">
+            <a href=""
+              ><i class="ph ph-shopping-cart font-semibold text-2xl mx-1"></i
+            ></a>
+
+            <div
+              class="w-20 h-8 bg-yellow-400/75 rounded-xl flex items-center justify-center shadow-lg shadow-gray-500/50 hover:bg-yellow-600 transition duration-500 ease-in-out"
+            >
+              <button class="font-Archivo font-semibold">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container w-[95%] h-14 mx-auto flex justify-between items-center bg-white rounded-xl shadow-md shadow-slate-500/60 lg:w-[95%] lg:hidden"
+      >
+        <div>
+          <form action="">
+            <input
+              id="input"
+              type="text"
+              placeholder="Cari yang kamu mau"
+              class="w-[270px] mx-3 px-3 py-2 focus:outlne-none rounded-lg bg-transparent"
+            />
+          </form>
+        </div>
+        <div class="flex">
+          <div
+            class="flex justify-center bg-gray-200/50 rounded-lg cursor-pointer"
+          >
+            <i class="ph ph-image text-4xl"></i>
+          </div>
+          <div
+            class="w-12 flex justify-center bg-yellow-400 rounded-lg mr-4 cursor-pointer"
+          >
+            <i class="ph ph-sparkle text-4xl"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header Section End-->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="min-h-[400px] lg:min-h-[500px]">
+      <div
+        class="container w-[95%] h-12 mx-auto mt-2 mb-5 lg:w-[95%] lg:-mt-10"
+      >
+        <div
+          class="bg-[url('/img/homeImg.jpg')] h-[400px] object-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center lg:bg-yellow-300 lg:bg-cover lg:h-[500px] transition duration-300"
+        >
+          <div class="">
+            <div class="flex justify-center pt-8">
+              <h1
+                class="w-64 font-bold text-4xl text-white text-center mb-7 lg:w-full"
+              >
+                turn your thoughts into
+                <span class="text-yellow-400">things</span>
+              </h1>
+            </div>
+            <p class="w-72 font-bold text-lg text-white text-center lg:w-full">
+              ask our All models to design a product for you
+            </p>
+            <div
+              class="hidden lg:container lg:mt-6 lg:bg-slate-50 lg:h-12 lg:rounded-xl lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:shadow-slate-900/40"
+            >
+              <form action="">
+                <input
+                  class="w-96 mx-3 px-3 py-2 focus:outline-none bg-transparent"
+                  type="text"
+                  placeholder="Start here by describing the product you'r"
+                />
+              </form>
+              <div class="flex">
+                <div class="flex justify-center rounded-lg cursor-pointer">
+                  <i class="ph ph-image text-[38px]"></i>
+                </div>
+                <div
+                  class="w-12 flex justify-center bg-yellow-400 rounded-lg mr-2 cursor-pointer"
+                >
+                  <i class="ph ph-sparkle text-4xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Trending Section Start -->
+    <section id="trending" class="font-Archivo">
+      <div class="container w-[95%] mt-10 mx-auto lg:w-[95%]">
+        <div class="w-full flex items-center justify-between">
+          <div class="w-[70%] bg-rd-300 flex justify-end lg:w-[60%]">
+            <h2 class="text-center text-[40px] font-bold lg:text-6xl">
+              live feed
+            </h2>
+          </div>
+          <div class="h-8 flex items-center bg-yellow-400 rounded-xl px-2">
+            <a href="" class="text-[10px] font-semibold">View All</a>
+          </div>
+        </div>
+        <div class="w-[95%] mt-5 lg:mx-auto">
+          <p class="text-2xl text-zinc-400 lg:text-center lg:text-3xl">
+            <span class="text-slate-950/75 font-semibold">editor's picks</span>
+            , most-liked, most-recent, under $100, gifts
+          </p>
+        </div>
+        <div class="mt-10">
+          <div
+            id="product-trending"
+            class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:justify-between"
+          ></div>
+        </div>
+        <div class="my-16">
+          <h2 class="text-center text-[40px] font-bold lg:text-6xl">
+            Materials Used
+          </h2>
+        </div>
+        <div
+          class="scroll w-full flex overflow-x-auto gap-6 rounded-xl lg:h-64"
+        >
+          <img src="img/T1.jpg" alt="" class="rounded-xl w-[88%]" />
+          <img src="img/T1.jpg" alt="" class="rounded-xl w-[88%]" />
+          <img src="img/T1.jpg" alt="" class="rounded-xl w-[88%]" />
+          <img src="img/T1.jpg" alt="" class="rounded-xl w-[88%]" />
+          <img src="img/T1.jpg" alt="" class="rounded-xl w-[88%]" />
+          <img src="img/T1.jpg" alt="" class="rounded-xl w-[88%]" />
+        </div>
+      </div>
+    </section>
+    <!-- Trending Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="font-Afacad">
+      <div class="container w-[95%] mx-auto my-12 flex">
+        <div class="w-[50%] px-2 lg:w-[40%]">
+          <h2 class="text-3xl lg:text-5xl font-medium">
+            We're in beta, and you're here first.
+          </h2>
+          <p class="mt-3 lg:text-xl lg:font-light">
+            <span class="font-bold text-amber-500 lg:text-2xl">Arcade</span> is
+            a first of its kind community that lets you collaborate with Al to
+            co-design products and then work with skilled independent artisans
+            to hand make them for you.
+          </p>
+        </div>
+        <div
+          class="w-[50%] scroll flex overflow-x-auto h-60 rounded-lg gap-3 lg:w-[60%] lg:h-96"
+        >
+          <img src="img/T1.jpg" alt="" class="rounded-lg w-[350px]" />
+          <img src="img/T1.jpg" alt="" class="rounded-lg w-[350px]" />
+          <img src="img/T1.jpg" alt="" class="rounded-lg w-[350px]" />
+          <img src="img/T1.jpg" alt="" class="rounded-lg w-[350px]" />
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Products Products Section Start -->
+    <section id="products">
+      <!-- Necklace Products Start -->
+      <section id="necklace">
+        <div class="container w-[95%] mx-auto">
+          <div class="font-bold text-[30px] flex justify-center lg:text5">
+            <h2>Your Words Your Away</h2>
+          </div>
+          <div class="flex justify-end">
+            <div
+              class="h-8 w-14 mt-4 flex items-center bg-yellow-400 rounded-xl px-2"
+            >
+              <a href="" class="text-[10px] font-semibold">View All</a>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div
+              id="necklace-products"
+              class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:justify-between"
+            ></div>
+          </div>
+        </div>
+        <!-- Necklace Products End -->
+      </section>
+
+      <!-- Ring Products Start -->
+      <section id="ring">
+        <div class="container w-[95%] mx-auto mt-32">
+          <div class="font-bold text-[30px] flex justify-center lg:text5">
+            <h2>Your Words Your Away</h2>
+          </div>
+          <div class="flex justify-end">
+            <div
+              class="h-8 w-14 mt-4 flex items-center bg-yellow-400 rounded-xl px-2"
+            >
+              <a href="" class="text-[10px] font-semibold">View All</a>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div
+              id="ring-products"
+              class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:justify-between"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Ring Products Start -->
+    </section>
+    <!-- Products Products Section End -->
+
+    <!-- Section Store Start -->
+
+    <!-- Section Store End -->
+
+    <script src="js/API.js"></script>
+  </body>
+</html>

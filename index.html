@@ -57,7 +57,7 @@
   </head>
   <body class="bg-gray-200 min-h-[5000px] scroll">
     <!-- Header Section Start-->
-    <section id="head" class="mb-12">
+    <section id="head-section" class="mb-12">
       <div class="container w-[95%] h-12 mx-auto mt-5 mb-3 lg:w-full lg:px-6">
         <div id="judul" class="py-1 px-2 flex justify-between">
           <div class="flex items-center">
@@ -74,7 +74,9 @@
             <div
               class="w-20 h-8 bg-yellow-400/75 rounded-xl flex items-center justify-center shadow-lg shadow-gray-500/50 hover:bg-yellow-600 transition duration-500 ease-in-out"
             >
-              <button class="font-Archivo font-semibold">Sign In</button>
+              <button class="font-Archivo font-semibold">
+                <a href="https://www.instagram.com/muhamad.irfan_/">Sign In</a>
+              </button>
             </div>
           </div>
         </div>
@@ -109,12 +111,12 @@
     <!-- Header Section End-->
 
     <!-- Hero Section Start -->
-    <section id="home" class="min-h-[400px] lg:min-h-[500px]">
+    <section id="home-section" class="min-h-[400px] lg:min-h-[500px]">
       <div
         class="container w-[95%] h-12 mx-auto mt-2 mb-5 lg:w-[95%] lg:-mt-10"
       >
         <div
-          class="bg-[url('/img/homeImg.jpg')] h-[400px] object-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center lg:bg-yellow-300 lg:bg-cover lg:h-[500px] transition duration-300"
+          class="bg-[url('img/home-img.jpg')] h-[400px] object-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center lg:bg-yellow-300 lg:bg-cover lg:h-[500px] transition duration-300"
         >
           <div class="">
             <div class="flex justify-center pt-8">
@@ -156,7 +158,7 @@
     <!-- Hero Section End -->
 
     <!-- Trending Section Start -->
-    <section id="trending" class="font-Archivo">
+    <section id="trending-section" class="font-Archivo">
       <div class="container w-[95%] mt-10 mx-auto lg:w-[95%]">
         <div class="w-full flex items-center justify-between">
           <div class="w-[70%] bg-rd-300 flex justify-end lg:w-[60%]">
@@ -200,13 +202,13 @@
     <!-- Trending Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="font-Afacad">
+    <section id="about-section" class="font-Afacad">
       <div class="container w-[95%] mx-auto my-12 flex">
         <div class="w-[50%] px-2 lg:w-[40%]">
           <h2 class="text-3xl lg:text-5xl font-medium">
             We're in beta, and you're here first.
           </h2>
-          <p class="mt-3 lg:text-xl lg:font-light">
+          <p class="mt-3 text-xl lg:text-xl lg:font-light">
             <span class="font-bold text-amber-500 lg:text-2xl">Arcade</span> is
             a first of its kind community that lets you collaborate with Al to
             co-design products and then work with skilled independent artisans
@@ -214,7 +216,7 @@
           </p>
         </div>
         <div
-          class="w-[50%] scroll flex overflow-x-auto h-60 rounded-lg gap-3 lg:w-[60%] lg:h-96"
+          class="w-[50%] flex scroll overflow-x-auto min-h-max rounded-lg gap-3 lg:w-[60%] lg:h-96"
         >
           <img src="img/T1.jpg" alt="" class="rounded-lg w-[350px]" />
           <img src="img/T1.jpg" alt="" class="rounded-lg w-[350px]" />
@@ -226,48 +228,44 @@
     <!-- About Section End -->
 
     <!-- Products Products Section Start -->
-    <section id="products">
+    <section id="products-section">
       <!-- Necklace Products Start -->
-      <section id="necklace">
+      <section id="necklace-section" class="font-Afacad">
         <div class="container w-[95%] mx-auto">
-          <div class="font-bold text-[30px] flex justify-center lg:text5">
-            <h2>Your Words Your Away</h2>
+          <div class="font-bold flex justify-center lg:text5">
+            <h2 class="text-[40px]">Your Words Your Away</h2>
           </div>
           <div class="flex justify-end">
             <div
-              class="h-8 w-14 mt-4 flex items-center bg-yellow-400 rounded-xl px-2"
+              class="h-8 w-14 mt-4 flex items-center justify-center bg-yellow-400 rounded-xl px-2"
             >
-              <a href="" class="text-[10px] font-semibold">View All</a>
+              <a href="" class="text-[12px] font-semibold">View All</a>
             </div>
           </div>
-          <div class="mt-3">
-            <div
-              id="necklace-products"
-              class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:justify-between"
-            ></div>
+          <div class="w-[100%] mt-3 h-[266px] scroll overflow-x-scroll">
+            <div id="necklace-products" class="flex p-4 w-max gap-4"></div>
           </div>
         </div>
         <!-- Necklace Products End -->
       </section>
 
       <!-- Ring Products Start -->
-      <section id="ring">
-        <div class="container w-[95%] mx-auto mt-32">
-          <div class="font-bold text-[30px] flex justify-center lg:text5">
+      <section id="ring-section" class="font-Afacad">
+        <div class="container w-[95%] mx-auto mt-10">
+          <div class="font-bold text-[40px] flex justify-center lg:text5">
             <h2>Your Words Your Away</h2>
           </div>
           <div class="flex justify-end">
             <div
-              class="h-8 w-14 mt-4 flex items-center bg-yellow-400 rounded-xl px-2"
+              class="h-8 w-14 mt-4 flex items-center justify-center bg-yellow-400 rounded-xl px-2"
             >
-              <a href="" class="text-[10px] font-semibold">View All</a>
+              <a href="" class="text-[12px] font-bold lg:font-semibold"
+                >View All</a
+              >
             </div>
           </div>
-          <div class="mt-3">
-            <div
-              id="ring-products"
-              class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:justify-between"
-            ></div>
+          <div class="w-[100%] mt-3 h-[268px] scroll overflow-x-scroll">
+            <div id="ring-products" class="flex p-4 w-max gap-4"></div>
           </div>
         </div>
       </section>
@@ -276,9 +274,133 @@
     <!-- Products Products Section End -->
 
     <!-- Section Store Start -->
+    <section id="store-section" class="font-Afacad">
+      <div class="container w-[95%] mx-auto mt-12">
+        <div class="font-bold text-[30px] flex justify-center lg:text5">
+          <h2 class="text-center lg:text-5xl">
+            find your best
+            <span
+              class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-amber-500 relative inline-block shadow-lg shadow-slate-600"
+              ><span class="relative text-white">experience</span></span
+            >
+            at the store
+          </h2>
+        </div>
+        <div class="flex justify-end">
+          <div
+            class="h-8 w-14 mt-4 flex items-center justify-center bg-yellow-400 rounded-xl px-2"
+          >
+            <a href="" class="text-[12px] font-bold lg:font-semibold"
+              >View All</a
+            >
+          </div>
+        </div>
+        <div class="w-[100%] mt-3 min-h-max scroll overflow-x-scroll">
+          <div id="store" class="flex p-4 w-max gap-4"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section Store End -->
 
+    <!-- Section   -->
+    <section id="about-section" class="font-Afacad">
+      <div
+        class="container w-[95%] mx-auto my-12 flex bg-gradient-to-b from-gray-200 to-gray-300/15 rounded-lg"
+      >
+        <div class="w-[60%] px-2 lg:w-[40%]">
+          <h2 class="text-3xl lg:text-5xl font-medium">
+            We're in beta, and you're here first.
+          </h2>
+          <p class="mt-3 text-xl lg:text-xl lg:font-light">
+            <span class="font-bold text-amber-500 lg:text-2xl">Arcade</span>
+            is a first of its kind community that lets you collaborate with Al
+            to co-design products and then work with skilled independent
+            artisans to hand make them for you.
+          </p>
+        </div>
+        <div class="w-[40%] mt-3 min-h-max scroll overflow-x-scroll">
+          <div id="ring-products" class="flex p-4 w-max gap-4">
+            <div
+              class="relative overflow-hidden shadow-lg rounded-lg hover:scale-105 transition duration-300"
+            >
+              <img src="img/T1.jpg" alt="" class="w-[380px] min-h-max" />
+              <div class="w-20 absolute flex top-0 mt-2 ml-2">
+                <div
+                  class="w-[50%] rounded-l-full text-xl flex items-center justify-center mr-[1px]"
+                ></div>
+              </div>
+              <div class="flex items-center absolute bottom-0 left-0 mx-4">
+                <img src="img/T1.jpg" alt="" class="w-10 h-10 rounded-full" />
+                <div class="mx-3 my-2">
+                  <h4 class="font-semibold">Brio</h4>
+                  <p>Jaipur, India</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative overflow-hidden shadow-lg rounded-lg hover:scale-105 transition duration-300"
+            >
+              <img src="img/T1.jpg" alt="" class="w-[380px] min-h-max" />
+              <div class="w-20 absolute flex top-0 mt-2 ml-2">
+                <div
+                  class="w-[50%] rounded-l-full text-xl flex items-center justify-center mr-[1px]"
+                ></div>
+              </div>
+              <div class="flex items-center absolute bottom-0 left-0 mx-4">
+                <img src="img/T1.jpg" alt="" class="w-10 h-10 rounded-full" />
+                <div class="mx-3 my-2">
+                  <h4 class="font-semibold">Brio</h4>
+                  <p>Jaipur, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Section Coming Soon Start -->
+    <section class="font-Afacad">
+      <div class="my-6">
+        <h2 class="text-center text-[40px] font-bold lg:text-6xl">
+          Soon On Arcade
+        </h2>
+      </div>
+      <div class="w-[100%] min-h-max scroll overflow-x-scroll">
+        <div id="coming-soon" class="flex p-4 w-max gap-4"></div>
+      </div>
+    </section>
+    <!-- Section Coming Soon End -->
+
+    <!-- Section Social Media Start -->
+    <section>
+      <div
+        class="w-fit flex gap-1 items-center mx-auto rounded-full p-4 my-32 shadow-lg border border-slate-400 bg-yellow-300"
+      >
+        <a href="https://www.instagram.com/muhamad.irfan_/">
+          <i class="ph ph-instagram-logo text-5xl"></i>
+        </a>
+        <a href="https://x.com/irfanade194">
+          <i class="ph ph-x-logo text-5xl"></i>
+        </a>
+        <a href="https://github.com/adeIrfan123">
+          <i class="ph ph-github-logo text-5xl"></i>
+        </a>
+        <a href="https://discord.gg/H2r27AZc">
+          <i class="ph ph-discord-logo text-5xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhamad-irfan01/">
+          <i class="ph ph-linkedin-logo text-5xl"></i>
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=100025632693660">
+          <i class="ph ph-facebook-logo text-5xl"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Section Social Media End -->
+    <script src="js/script.js"></script>
     <script src="js/API.js"></script>
   </body>
 </html>
